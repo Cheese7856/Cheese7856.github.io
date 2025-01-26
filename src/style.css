@@ -32,7 +32,7 @@ h2 {
 
 .card {
   width: var(--card-width);
-  height: 650px;
+  height: 100%;
   border-radius: 10px;
 
   border-color: black;
@@ -44,6 +44,7 @@ h2 {
   margin: 0 auto;
   display: flex;
   width: calc(var(--card-width) * 2 + 30px);
+  height: 650px;
   justify-content: space-between;
 }
 
@@ -70,4 +71,13 @@ li {
 
 a {
   color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  #cards {
+    height: auto;
+    flex-direction: column;
+    width: 90%;
+    gap: 10px;
+  }
 }
